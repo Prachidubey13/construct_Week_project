@@ -1,0 +1,80 @@
+Online Voting System
+Introduction
+This project implements an online voting system using JavaScript. The system allows voters to register, cast votes for candidates, and tally the results to declare a winner. The assignment demonstrates the core functionality required for a simple election process, ensuring that each voter can only vote once and that the election results are accurately calculated and displayed.
+
+Project Type
+Backend
+
+Tools Required
+JavaScript
+Node.js
+Directory Structure
+plaintext
+Copy code
+online-voting-system/
+├─ votingSystem.js
+├─ package.json
+└─ README.md
+Features
+Register New Voters: Allows new voters to register with a unique voterId.
+Add Candidates: Adds candidates to the election.
+Cast Votes: Registered voters can cast a vote for a candidate.
+Tally Votes: Counts the votes for each candidate and declares the winner.
+Display Results: Shows the total number of votes for each candidate, the winner, and the overall voter turnout.
+Design Decisions or Assumptions
+Unique Voter IDs: Assumes that each voter has a unique ID to ensure they can only vote once.
+Single Vote per Voter: Each voter is only allowed to vote once, and their vote is stored securely.
+Installation & Getting Started
+Clone the Repository:
+
+bash
+Copy code
+git clone https://github.com/your-repo/online-voting-system.git
+cd online-voting-system
+Install Node.js (if not already installed):
+
+Download Node.js
+Run the Voting System:
+
+Open votingSystem.js in a code editor.
+Use Node.js to run the script:
+bash
+Copy code
+node votingSystem.js
+Usage
+The votingSystem.js file contains hard-coded example data to demonstrate the system’s functionality:
+
+Register Voters:
+
+Example: registerVoter('voter123') adds a voter with the ID voter123.
+Add Candidates:
+
+Example: addCandidate('Candidate A') adds a candidate named Candidate A.
+Cast Votes:
+
+Example: castVote('voter123', 'Candidate A') records a vote for Candidate A by voter123.
+Tally Votes and Display Results:
+
+Example: tallyVotes() counts the votes and determines the winner.
+Example: displayResults() shows the voting results and voter turnout.
+Example Script Execution:
+
+bash
+Copy code
+node votingSystem.js
+The console will display the registration of voters, addition of candidates, casting of votes, and the final results.
+
+Testing
+The script includes hard-coded data to test all functionalities of the VotingSystem class.
+Each method's results are logged to the console for verification.
+The script is fully commented to explain the logic and flow.
+Code Structure and Commenting
+VotingSystem Class: Contains methods for managing voters, candidates, voting, tallying, and displaying results.
+Comments: Inline comments are provided throughout the code to explain each method’s purpose and functionality.
+Submission
+Ensure the votingSystem.js file is submitted via the Learning Management System (LMS).
+Confirm that your code is well-commented, clean, and follows JavaScript best practices.
+Evaluation Criteria
+Correctness: The code should correctly implement all required functionalities.
+Code Quality: The code should be clean, well-organized, and well-commented.
+Functionality: The system should effectively handle all specified tasks.
